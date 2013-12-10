@@ -1,0 +1,1 @@
+.\JaySvcUtil.exe --metadataUri http://localhost:7787/OData/$metadata --out scripts/Models/KSModel.js
