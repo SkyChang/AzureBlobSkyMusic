@@ -19,8 +19,8 @@ namespace AzureBlobSkyMusic.Web.Controllers.API
 
         public MusicController()
         {
-            //CloudStorageAccount account = CloudStorageAccount.DevelopmentStorageAccount;
-            CloudStorageAccount account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnection"));
+            CloudStorageAccount account = CloudStorageAccount.DevelopmentStorageAccount;
+            //CloudStorageAccount account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnection"));
             CloudBlobClient client = account.CreateCloudBlobClient();
             //取得Container。
             _container = client.GetContainerReference("skymusic");
